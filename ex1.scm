@@ -1,0 +1,12 @@
+#lang sicp
+(define (sum_max a b)
+  (+ (* a a) (* b b))
+)
+(define (sum_two_max_numbr a b c)
+  (cond ( (> a b c) (sum_max a b))
+        ( (> a c b ) (sum_max a c))
+        ( (> b c a) (sum_max b c))
+        ( (> b a c) (sum_max b a))
+        ( (> c a b) (sum_max c a))
+        ( (> c b a) (sum_max b c))
+  ))
